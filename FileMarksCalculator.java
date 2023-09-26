@@ -13,7 +13,7 @@ public class FileMarksCalculator
         //create exception handling
         try
         {
-            File myFile = new File("/Users/harinderkaur/Desktop/prog5001_students_grade_2022.txt");
+            File myFile = new File(" prog5001_students_grade_2022.docx");
             Scanner myReader = new Scanner(myFile);     //scanner method to read file
             while (myReader.hasNext())
             {
@@ -25,7 +25,6 @@ public class FileMarksCalculator
         catch(FileNotFoundException e)
         {
             System.out.println("No file found");
-            e.printStackTrace();
         }
     }
 }
