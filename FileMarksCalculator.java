@@ -13,7 +13,7 @@ public class FileMarksCalculator
         //create exception handling
         try
         {
-            File myFile = new File(" prog5001_students_grade_2022.docx");
+            File myFile = new File("prog5001_students_grade_2022.rtf");
             Scanner myReader = new Scanner(myFile);     //scanner method to read file
             System.out.println("file found");
             System.out.println();
