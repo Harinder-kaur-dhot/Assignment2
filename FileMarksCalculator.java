@@ -25,6 +25,7 @@ public class FileMarksCalculator
         catch(FileNotFoundException e)
         {
             System.out.println("No file found");
+            e.printStackTrace();
         }
     }
 }
