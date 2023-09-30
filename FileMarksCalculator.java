@@ -22,8 +22,13 @@ public class FileMarksCalculator
             while (myReader.hasNextLine())
             {
                 String data = myReader.nextLine();
-                System.out.println(i+ " " +data);
                 i++;
+                if(i<=2)
+                {
+                    continue;       // to skip first two lines
+                }
+                
+
             }
             myReader.close();
         }
