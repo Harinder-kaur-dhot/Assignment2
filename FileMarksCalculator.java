@@ -44,16 +44,24 @@ public class FileMarksCalculator
                     //now add this data into list using add() method
                     studentDetails.add(s1);
                 }
-
-
-
             }
             myReader.close();
+            
+            //create menu
+            System.out.println("Welcome");
+            System.out.println("Press 1 to print student deatils.");
+            System.out.println("Press 2 to get total marks.");
+            System.out.println("Press 3 to get top 5 student's details with marks.");
+            System.out.println("Press 4 to get the  Lowest scorer's details");
+            System.out.println("Press 5 to exit");
+            System.out.println("Please enter the valid option input");
+
         }
         catch(FileNotFoundException e)
         {
             System.out.println("No file found");
-        }
+        }     
+
     }
 }
 
