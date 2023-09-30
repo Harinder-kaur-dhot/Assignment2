@@ -1,7 +1,7 @@
 
 public class StudentData {
     public String firstName, lastName;
-    public int studentId, a1, a2, a3, totalMarks;
+    public int studentId, a1, a2, a3, totalMarks, i;
 
     //create constructor
 
@@ -15,18 +15,5 @@ public class StudentData {
         this.a3 = Integer.parseInt(a3);
     }
 
-    public void getMinimumMarks()
-    {
 
     }
-
-    public void getMaximumMarks()
-    {
-
-    }
-
-    public void printDetails()
-    {
-
-    }
-}
