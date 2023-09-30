@@ -38,7 +38,10 @@ public class FileMarksCalculator
                     String a2 = chuncks[4];
                     String a3 = chuncks[5];
                     
-                    //now put all these values in the list, for this we need more functions from student class
+                    //now put all these values in the list, for this we need more functions from StudentData class
+                    StudentData s1 = new StudentData(firstName, lastName, studentId, a1, a2, a3);
+                    
+
                 }
 
 
