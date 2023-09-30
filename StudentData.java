@@ -5,14 +5,14 @@ public class StudentData {
 
     //create constructor
 
-    public StudentData(String firstName, String lastName, int studentId, int a1, int a2, int a3)
+    public StudentData(String firstName, String lastName, String studentId, String a1, String a2, String a3)
     {
         this.lastName = lastName;
         this.firstName = firstName;
-        this.studentId = studentId;
-        this. a1 = a1;
-        this.a2 = a2;
-        this.a3 = a3;
+        this.studentId = Integer.parseInt(studentId);
+        this. a1 = Integer.parseInt(a1);
+        this.a2 = Integer.parseInt(a2);
+        this.a3 = Integer.parseInt(a3);
     }
 
     public void getMinimumMarks()
@@ -27,6 +27,6 @@ public class StudentData {
 
     public void printDetails()
     {
-        
+
     }
 }
