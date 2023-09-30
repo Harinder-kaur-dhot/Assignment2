@@ -2,6 +2,8 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -15,10 +17,9 @@ public class FileMarksCalculator
         {
             File myFile = new File("prog5001_students_grade_2022.rtf");
             Scanner myReader = new Scanner(myFile);     //scanner method to read file
-            System.out.println("file found");
-            System.out.println();
-            System.out.println(myReader);
-            int i=1;
+            //declare a list to store data, the list is StudentData type
+            List<StudentData> studentDetails = new ArrayList<>();
+            int i=1;                                   //counter or each line in the file
             while (myReader.hasNextLine())
             {
                 String data = myReader.nextLine();
@@ -40,8 +41,8 @@ public class FileMarksCalculator
                     
                     //now put all these values in the list, for this we need more functions from StudentData class
                     StudentData s1 = new StudentData(firstName, lastName, studentId, a1, a2, a3);
-                    
-
+                    //now add this data into list using add() method
+                    studentDetails.add(s1);
                 }
 
 
