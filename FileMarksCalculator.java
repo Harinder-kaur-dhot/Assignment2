@@ -23,11 +23,25 @@ public class FileMarksCalculator
             {
                 String data = myReader.nextLine();
                 i++;
-                if(i<=2)
+                if(i<=2 || data.isEmpty())
                 {
                     continue;       // to skip first two lines
                 }
-                
+                //now we need to break the data in to chuncks or split it by ","
+                String[] chuncks = data.split(",");
+                if(chuncks.length >= 6)
+                {
+                    String lastName = chuncks[0];
+                    String firstName = chuncks[1];
+                    String studentId = chuncks[2];
+                    String a1 = chuncks[3];
+                    String a2 = chuncks[4];
+                    String a3 = chuncks[5];
+                    
+                    //now put all these values in the list, for this we need more functions from student class
+                }
+
+
 
             }
             myReader.close();
