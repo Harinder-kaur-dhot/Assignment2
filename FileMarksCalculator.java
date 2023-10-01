@@ -103,6 +103,7 @@ public class FileMarksCalculator {
                     }
                     break;
                 }
+                
                 case 4: {
                     System.out.println("Top 5 students who obtain highest marks: ");
                     // Lets first sort the list and then it will be esay to get top 5 and the lowest
