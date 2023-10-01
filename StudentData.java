@@ -1,8 +1,6 @@
 public class StudentData {
     public String firstName, lastName;
     public double a1, a2, a3, totalMarks;
-    public double[] minimumMarks;
-    public double[] maximumMarks;
     public int i, studentId;
 
     // create constructor
@@ -22,7 +20,7 @@ public class StudentData {
     }
 
     public String getfullName() {
-        return "firstName" + " " + "lastName";
+        return firstName + " " + lastName;
     }
 
     public int getStudentId() {
