@@ -39,11 +39,4 @@ public class StudentData {
         return a3;
     }
 
-    /*
-     * public double getMinimumMarks(List<StudentData> studentDetails) {
-     * for (i = 0; i <= studentDetails.size(); i++) {
-     * 
-     * }
-     */
-
 }
