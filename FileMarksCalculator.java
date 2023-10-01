@@ -54,7 +54,7 @@ public class FileMarksCalculator {
             System.out.println("Press 1 to print student deatils in a list.");
             System.out.println("Press 2 to print student deatils in a block.");
             System.out.println("Press 3 to get total marks.");
-            System.out.println("Press 4 to get top 5 student's details with marks.");
+            System.out.println("Press 4 to get top 5 student's details with highest marks.");
             System.out.println("Press 5 to get the  Lowest scorer's details");
             System.out.println("Press 6 to exit");
             System.out.println("Please enter the valid option input");
@@ -105,9 +105,31 @@ public class FileMarksCalculator {
                     break;
                 }
                 case 4: {
+                    System.out.println("Top 5 students who obtain highest marks: ");
                     // Lets first sort the list and then it will be esay to get top 5 and the lowest
-                    // 5
+                    for (i = 0; i < studentDetails.size()-1; i++) {
+                        for (int j = 0; j < studentDetails.size(); j++) {
+                            if (studentDetails.get(i).totalMarks < studentDetails.get(j).totalMarks) {
+                                StudentData temp = studentDetails.get(i);
+                                studentDetails.set(i, studentDetails.get(j));
+                                studentDetails.set(j, temp);
+                            }
                 }
+                StudentData student = studentDetails.get(i);
+                        System.out.println("Name: " + student.getfullName());
+                        System.out.println("Student ID: " + student.getStudentId());
+                        System.out.println("Total Marks: " + student.getTotalMarks());
+                        System.out.println();
+            }
+            for (i = 0; i < 5; i++) {
+                        StudentData student = studentDetails.get(i);
+                        System.out.println("Name: " + student.getfullName());
+                        System.out.println("Student ID: " + student.getStudentId());
+                        System.out.println("Total Marks: " + student.getTotalMarks());
+                        System.out.println();
+                    }
+
+        }
 
                     break;
 
@@ -118,9 +140,9 @@ public class FileMarksCalculator {
                     getChoice.close();
 
                 default:
+                    System.out.println("Please enter a valid option form 1 to 6.");
                     break;
+                }
             }
         }
-
     }
-}
