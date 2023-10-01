@@ -17,7 +17,6 @@ public class FileMarksCalculator {
         try {
             File myFile = new File("prog5001_students_grade_2022.txt");
             Scanner myReader = new Scanner(myFile); // scanner method to read file
-            System.out.println("file found");
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
                 i++;
