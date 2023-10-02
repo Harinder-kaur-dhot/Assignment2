@@ -104,7 +104,9 @@ public class FileMarksCalculator {
                 }
                 
                 case 4: {
-                    System.out.println("Top 5 students who obtain highest marks: ");
+                    System.out.println("Enter the number of studnets for details who obtain highest marks: ");
+                    Scanner scann = new Scanner(System.in);
+                    int number = scann.nextInt();
                     // Lets first sort the list and then it will be esay to get top 5 and the lowest
                     for (i = 0; i < studentDetails.size()-1; i++) {
                         for (int j = i+1; j < studentDetails.size(); j++) {
@@ -116,20 +118,23 @@ public class FileMarksCalculator {
                             
                 }
             }
-            for (i = 0; i < 5; i++) {
+            for (i = 0; i < number; i++) {
                         StudentData student = studentDetails.get(i+1);
-                        System.out.println(i);
+                        System.out.println(i+1);
                         System.out.println("Name: " + student.getfullName());
                         System.out.println("Student ID: " + student.getStudentId());
                         System.out.println("Total Marks: " + student.getTotalMarks());
                         System.out.println();
         }
+        scann.close();
     }
 
                     break;
 
                     case 5: {
                     System.out.println("5 students who obtain lowest marks: ");
+                    Scanner scann = new Scanner(System.in);
+                    int number = scann.nextInt();
                     // Lets first sort the list and then it will be esay to get top 5 and the lowest
                     for (i = 0; i < studentDetails.size()-1; i++) {
                         for (int j = i+1; j < studentDetails.size(); j++) {
@@ -140,14 +145,15 @@ public class FileMarksCalculator {
                             }
                         }
                     }
-                    for (i = 0; i < 5; i++) {
+                    for (i = 0; i < number; i++) {
                         StudentData student = studentDetails.get(i+1);
-                        System.out.println(i);
+                        System.out.println(i+1);
                         System.out.println("Name: " + student.getfullName());
                         System.out.println("Student ID: " + student.getStudentId());
                         System.out.println("Total Marks: " + student.getTotalMarks());
                         System.out.println();
                     }
+                    scann.close();
                     break;
                     }
                 case 6: {
