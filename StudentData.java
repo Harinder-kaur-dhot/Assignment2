@@ -30,7 +30,6 @@ public class StudentData {
     public double getA1() {
         return a1;
     }
-
     public double getA2() {
         return a2;
     }
