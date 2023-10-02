@@ -40,15 +40,8 @@ public class FileMarksCalculator {
                 }
             }
             myReader.close();
-        }
 
-        catch (
-
-        FileNotFoundException e) {
-            System.out.println("No file found");
-        }
-
-        while (option == true) {
+            while (option == true) {
             System.out.println("Welcome");
             System.out.println("Press 1 to print student deatils in a list.");
             System.out.println("Press 2 to print student deatils in a block.");
@@ -126,7 +119,6 @@ public class FileMarksCalculator {
                         System.out.println("Total Marks: " + student.getTotalMarks());
                         System.out.println();
         }
-        scann.close();
     }
 
                     break;
@@ -153,7 +145,6 @@ public class FileMarksCalculator {
                         System.out.println("Total Marks: " + student.getTotalMarks());
                         System.out.println();
                     }
-                    scann.close();
                     break;
                     }
                 case 6: {
@@ -167,5 +158,14 @@ public class FileMarksCalculator {
                     break;
                 }
             }
+
         }
+
+        catch (
+
+        FileNotFoundException e) {
+            System.out.println("No file found");
+        }
+
+                }
     }
