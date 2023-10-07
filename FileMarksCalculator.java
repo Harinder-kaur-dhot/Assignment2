@@ -24,7 +24,7 @@ public class FileMarksCalculator {
                 String data = myReader.nextLine();
                 i++;
                 if (i > 2) {
-                    if (data.isBlank() || data.isEmpty() || data.startsWith("/"))
+                    if (data.isBlank() || data.isEmpty() || data.startsWith("/") || data.equals(null))
                         continue;
                     // now we need to break the data in to chuncks or split it by ","
                     String[] chuncks = data.split(",");
