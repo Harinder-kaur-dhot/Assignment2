@@ -49,7 +49,7 @@ public class FileMarksCalculator {
             System.out.println("Press 1 to print student deatils in a list.");
             System.out.println("Press 2 to print student deatils in a block.");
             System.out.println("Press 3 to get marks below a threshold.");
-            System.out.println("Press 4 to get top 5 student's details with highest marks.");
+            System.out.println("Press 4 to get top student's details with highest marks.");
             System.out.println("Press 5 to get the  Lowest scorer's details");
             System.out.println("Press 6 to exit");
             System.out.println("Please enter the valid option input");
