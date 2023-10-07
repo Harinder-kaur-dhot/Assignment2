@@ -15,7 +15,10 @@ public class FileMarksCalculator {
         List<StudentData> studentDetails = new ArrayList<>();
         // create exception handling
         try {
-            File myFile = new File("prog5001_students_grade_2022.txt");
+            System.out.println("Please enter the valid file name (here file name is :prog5001_students_grade_2022.txt)");
+            Scanner scans = new Scanner(System.in);
+            String fileName = scans.nextLine();
+            File myFile = new File(fileName);
             Scanner myReader = new Scanner(myFile); // scanner method to read file
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
