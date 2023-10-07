@@ -11,6 +11,7 @@ public class FileMarksCalculator {
     public static void main(String[] arg) {
         int i = 0, choice; // counter or each line in the file and choice for menu
         boolean option = true;
+        String unitName = null;
         // declare a list to store data, the list is StudentData type
         List<StudentData> studentDetails = new ArrayList<>();
         // create exception handling
@@ -23,6 +24,11 @@ public class FileMarksCalculator {
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
                 i++;
+                if(i==1)
+                {
+                    unitName = data;
+                    System.out.println(unitName);
+                }
                 if (i > 2) {
                     if (data.isBlank() || data.isEmpty() || data.startsWith("/") || data.equals(null))
                         continue;
