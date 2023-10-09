@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=StudentData
+comment1.params=lastName\ firstName\ studentId\ a1\ a2\ a3
+comment1.target=StudentData(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=double\ getTotalMarks()
+comment3.params=
+comment3.target=java.lang.String\ getfullName()
+comment4.params=
+comment4.target=int\ getStudentId()
+comment5.params=
+comment5.target=double\ getA1()
+comment6.params=
+comment6.target=double\ getA2()
+comment7.params=
+comment7.target=double\ getA3()
+numComments=8
